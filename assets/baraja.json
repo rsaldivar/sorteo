@@ -1,0 +1,272 @@
+{
+    "1 ": {
+        "nombre ": "El gallo",
+        "traduccion": "the rooster",
+        "dicho" : "El que le canto a San Pedro."
+    },
+    "2 ": {
+        "nombre ": "El diablito",
+        "traduccion": "the little Devil",
+        "dicho" : "Portate bien cuatito o te lleva el coloradito."
+    },
+    "3 ": {
+        "nombre ": "La dama",
+        "traduccion": "the lady",
+        "dicho" : "Puliendo el paso, por la Calle Real."
+    },
+    "4 ": {
+        "nombre ": "El catrín",
+        "traduccion": "the dandy",
+        "dicho" : "Don Ferruco en la Alameda."
+    },
+    "5 ": {
+        "nombre ": "El paraguas",
+        "traduccion": "the umbrella",
+        "dicho" : "Para el sol y para el agua."
+    },
+    "6 ": {
+        "nombre ": "La sirena",
+        "traduccion": "the mermaid",
+        "dicho" : "Con los cantos de la sirena, no te vallas a marear."
+    },
+    "7 ": {
+        "nombre ": "La escalera",
+        "traduccion": "the ladder",
+        "dicho" : "Sube paso a pasito, no quieras pegar brinquitos."
+    },
+    "8 ": {
+        "nombre ": "La botella",
+        "traduccion": "the bottle",
+        "dicho" : "La herramienta del borracho."
+    },
+    "9 ": {
+        "nombre ": "El barril",
+        "traduccion": "the barrel",
+        "dicho" : "Tanto tomo el barril hasta que quedo como barril."
+    },
+    "10": {
+        "nombre ": "El árbol",
+        "traduccion": "the tree",
+        "dicho" : "El que a buen arbol se arrima, buena sombra le cobija."
+    },
+    "11": {
+        "nombre ": "El melón",
+        "traduccion": "the melon",
+        "dicho" : "El melon de tierra fria."
+    },
+    "12": {
+        "nombre ": "El valiente",
+        "traduccion": "the brave man",
+        "dicho" : "El valiente y su tranchete."
+    },
+    "13": {
+        "nombre ": "El gorrito",
+        "traduccion": "the little bonnet",
+        "dicho" : "Ponle el gorrito al nene, no se valla a resfriar."
+    },
+    "14": {
+        "nombre ": "La muerte",
+        "traduccion": "Death",
+        "dicho" : "La muerte siriqui siaca."
+    },
+    "15": {
+        "nombre ": "La pera",
+        "traduccion": "the pear",
+        "dicho" : "El que espera desespera."
+    },
+    "16": {
+        "nombre ": "La bandera",
+        "traduccion": "the flag",
+        "dicho" : "Verde, Blanco y Colorado, La Bandera del Soldado."
+    },
+    "17": {
+        "nombre ": "El bandolón",
+        "traduccion": "the mandolin",
+        "dicho" : "Tocando su bandolon, esta el mariachi Simon."
+    },
+    "18": {
+        "nombre ": "El violoncello",
+        "traduccion": "the cello",
+        "dicho" : "Como no fue violin, tuvo  que ser violoncello."
+    },
+    "19": {
+        "nombre ": "La garza",
+        "traduccion": "the heron",
+        "dicho" : "La Garza pezcuezo de cable."
+    },
+    "20": {
+        "nombre ": "El pájaro",
+        "traduccion": "the bird",
+        "dicho" : "El Pajaro cantor."
+    },
+    "21": {
+        "nombre ": "La mano",
+        "traduccion": "the hand",
+        "dicho" : "La Mano del escribano."
+    },
+    "22": {
+        "nombre ": "La bota",
+        "traduccion": "the boot",
+        "dicho" : "Una Bota igual que la otra."
+    },
+    "23": {
+        "nombre ": "La luna",
+        "traduccion": "the moon",
+        "dicho" : "El farol de los enamorados."
+    },
+    "24": {
+        "nombre ": "El cotorro",
+        "traduccion": "the parrot",
+        "dicho" : "Cotorro, dame la pata y empieza a platicar."
+    },
+    "25": {
+        "nombre ": "El borracho",
+        "traduccion": "the drunkard",
+        "dicho" : "Que borracho tan necio, ya no lo puedo aguantar."
+    },
+    "26": {
+        "nombre ": "El negrito",
+        "traduccion": "the little black man",
+        "dicho" : "El que se comio el azucar."
+    },
+    "27": {
+        "nombre ": "El corazón",
+        "traduccion": "the heart",
+        "dicho" : "El corazon de una ingrata."
+    },
+    "28": {
+        "nombre ": "La sandía",
+        "traduccion": "the watermelon",
+        "dicho" : "La sandia y su rebanada."
+    },
+    "29": {
+        "nombre ": "El tambor",
+        "traduccion": "the drum",
+        "dicho" : "El tambor o caja de guerra."
+    },
+    "30": {
+        "nombre ": "El camarón",
+        "traduccion": "the shrimp",
+        "dicho" : "Camaron que se duerme se lo lleva la corriente."
+    },
+    "31": {
+        "nombre ": "Las jaras",
+        "traduccion": "the arrows",
+        "dicho" : "Las jaras del indio Adan, donde pegan, dan."
+    },
+    "32": {
+        "nombre ": "El músico",
+        "traduccion": "the musician",
+        "dicho" : "El musico toca y toca"
+    },
+    "33": {
+        "nombre ": "La araña",
+        "traduccion": "the spider",
+        "dicho" : "Atarantamela a palos, no me la dejes llegar."
+    },
+    "34": {
+        "nombre ": "El soldado",
+        "traduccion": "the soldier",
+        "dicho" : "Uno, dos, tres, el soldado pa'l cuartel."
+    },
+    "35": {
+        "nombre ": "La estrella",
+        "traduccion": "the star",
+        "dicho" : "La estrella polar del norte."
+    },
+    "36": {
+        "nombre ": "El cazo",
+        "traduccion": "the saucepan",
+        "dicho" : "El caso que te hago es poco."
+    },
+    "37": {
+        "nombre ": "El mundo",
+        "traduccion": "the world",
+        "dicho" : "El mundo es una bola."
+    },
+    "38": {
+        "nombre ": "El Apache",
+        "traduccion": "the Apache",
+        "dicho" : "Ay Chiuahua, cuanto Apache con calzon y con huarache."
+    },
+    "39": {
+        "nombre ": "El nopal",
+        "traduccion": "the prickly pear cactus",
+        "dicho" : "Al nopal la van a ver solo cuando tiene tunas."
+    },
+    "40": {
+        "nombre ": "El alacrán",
+        "traduccion": "the scorpion",
+        "dicho" : "El que con la cola pica le dan una paliza."
+    },
+    "41": {
+        "nombre ": "La rosa",
+        "traduccion": "the rose",
+        "dicho" : "Rosam la mas mugrosa."
+    },
+    "42": {
+        "nombre ": "La calavera",
+        "traduccion": "the skull",
+        "dicho" : "Al pasar por el panteon, me econtre un calaveron."
+    },
+    "43": {
+        "nombre ": "La campana",
+        "traduccion": "the bell",
+        "dicho" : "La camapana de dolores"
+    },
+    "44": {
+        "nombre ": "El cantarito",
+        "traduccion": "the little water pitcher",
+        "dicho" : "Tanto va el cantaro al agua hasta que se rompe."
+    },
+    "45": {
+        "nombre ": "El venado",
+        "traduccion": "the deer",
+        "dicho" : "El que brinca por la pradera."
+    },
+    "46": {
+        "nombre ": "El Sol",
+        "traduccion": "the sun",
+        "dicho" : "La cobija de los pobres."
+    },
+    "47": {
+        "nombre ": "La corona",
+        "traduccion": "the crown",
+        "dicho" : "El sombrero de los Reyes."
+    },
+    "48": {
+        "nombre ": "La chalupa",
+        "traduccion": "the canoe",
+        "dicho" : "Lupita sentada en su chalupita."
+    },
+    "49": {
+        "nombre ": "El pino",
+        "traduccion": "the pine tree",
+        "dicho" : "Fresco y oloroso, todo el tiempo hermoso."
+    },
+    "50": {
+        "nombre ": "El pescado",
+        "traduccion": "the fish",
+        "dicho" : "El que por la moca muere, aunque mudo fuere."
+    },
+    "51": {
+        "nombre ": "La palma",
+        "traduccion": "the palm tree",
+        "dicho" : "La Palma borracha de sol"
+    },
+    "52": {
+        "nombre ": "La maceta",
+        "traduccion": "the flowerpot",
+        "dicho" : "El que nace pa maceta del corredor no pasa"
+    },
+    "53": {
+        "nombre ": "El arpa",
+        "traduccion": "the harp",
+        "dicho" : "El Arpa vieja de mi suegra."
+    },
+    "54": {
+        "nombre ": "La rana",
+        "traduccion": "the frog",        
+        "dicho": "Al ver la verde rana, que brinco pego tu hermana."
+    }
+}

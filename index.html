@@ -1,0 +1,612 @@
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Sorteo de Alondra</title>
+    <style>
+        .col img{
+            min-width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loteria</h1>
+
+    <div class="container-fluid">
+        <div class="row"  id="content"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script>
+        function cargarActuales() {
+            jQuery.ajax({
+                url: "baraja.json",
+
+            }).then(function (resp) {
+            }).fail(function (err) { });
+        }
+
+        var baraja = {
+            "1": {
+                nombre: "El gallo",
+                traduccion: "the rooster",
+                dicho: "El que le canto a San Pedro."
+            },
+            "2": {
+                nombre: "El diablito",
+                traduccion: "the little Devil",
+                dicho: "Portate bien cuatito o te lleva el coloradito."
+            },
+            "3": {
+                nombre: "La dama",
+                traduccion: "the lady",
+                dicho: "Puliendo el paso, por la Calle Real."
+            },
+            "4": {
+                nombre: "El catrín",
+                traduccion: "the dandy",
+                dicho: "Don Ferruco en la Alameda."
+            },
+            "5": {
+                nombre: "El paraguas",
+                traduccion: "the umbrella",
+                dicho: "Para el sol y para el agua."
+            },
+            "6": {
+                nombre: "La sirena",
+                traduccion: "the mermaid",
+                dicho: "Con los cantos de la sirena, no te vallas a marear."
+            },
+            "7": {
+                nombre: "La escalera",
+                traduccion: "the ladder",
+                dicho: "Sube paso a pasito, no quieras pegar brinquitos."
+            },
+            "8": {
+                nombre: "La botella",
+                traduccion: "the bottle",
+                dicho: "La herramienta del borracho."
+            },
+            "9": {
+                nombre: "El barril",
+                traduccion: "the barrel",
+                dicho: "Tanto tomo el barril hasta que quedo como barril."
+            },
+            "10": {
+                nombre: "El árbol",
+                traduccion: "the tree",
+                dicho: "El que a buen arbol se arrima, buena sombra le cobija."
+            },
+            "11": {
+                nombre: "El melón",
+                traduccion: "the melon",
+                dicho: "El melon de tierra fria."
+            },
+            "12": {
+                nombre: "El valiente",
+                traduccion: "the brave man",
+                dicho: "El valiente y su tranchete."
+            },
+            "13": {
+                nombre: "El gorrito",
+                traduccion: "the little bonnet",
+                dicho: "Ponle el gorrito al nene, no se valla a resfriar."
+            },
+            "14": {
+                nombre: "La muerte",
+                traduccion: "Death",
+                dicho: "La muerte siriqui siaca."
+            },
+            "15": {
+                nombre: "La pera",
+                traduccion: "the pear",
+                dicho: "El que espera desespera."
+            },
+            "16": {
+                nombre: "La bandera",
+                traduccion: "the flag",
+                dicho: "Verde, Blanco y Colorado, La Bandera del Soldado."
+            },
+            "17": {
+                nombre: "El bandolón",
+                traduccion: "the mandolin",
+                dicho: "Tocando su bandolon, esta el mariachi Simon."
+            },
+            "18": {
+                nombre: "El violoncello",
+                traduccion: "the cello",
+                dicho: "Como no fue violin, tuvo  que ser violoncello."
+            },
+            "19": {
+                nombre: "La garza",
+                traduccion: "the heron",
+                dicho: "La Garza pezcuezo de cable."
+            },
+            "20": {
+                nombre: "El pájaro",
+                traduccion: "the bird",
+                dicho: "El Pajaro cantor."
+            },
+            "21": {
+                nombre: "La mano",
+                traduccion: "the hand",
+                dicho: "La Mano del escribano."
+            },
+            "22": {
+                nombre: "La bota",
+                traduccion: "the boot",
+                dicho: "Una Bota igual que la otra."
+            },
+            "23": {
+                nombre: "La luna",
+                traduccion: "the moon",
+                dicho: "El farol de los enamorados."
+            },
+            "24": {
+                nombre: "El cotorro",
+                traduccion: "the parrot",
+                dicho: "Cotorro, dame la pata y empieza a platicar."
+            },
+            "25": {
+                nombre: "El borracho",
+                traduccion: "the drunkard",
+                dicho: "Que borracho tan necio, ya no lo puedo aguantar."
+            },
+            "26": {
+                nombre: "El negrito",
+                traduccion: "the little black man",
+                dicho: "El que se comio el azucar."
+            },
+            "27": {
+                nombre: "El corazón",
+                traduccion: "the heart",
+                dicho: "El corazon de una ingrata."
+            },
+            "28": {
+                nombre: "La sandía",
+                traduccion: "the watermelon",
+                dicho: "La sandia y su rebanada."
+            },
+            "29": {
+                nombre: "El tambor",
+                traduccion: "the drum",
+                dicho: "El tambor o caja de guerra."
+            },
+            "30": {
+                nombre: "El camarón",
+                traduccion: "the shrimp",
+                dicho: "Camaron que se duerme se lo lleva la corriente."
+            },
+            "31": {
+                nombre: "Las jaras",
+                traduccion: "the arrows",
+                dicho: "Las jaras del indio Adan, donde pegan, dan."
+            },
+            "32": {
+                nombre: "El músico",
+                traduccion: "the musician",
+                dicho: "El musico toca y toca"
+            },
+            "33": {
+                nombre: "La araña",
+                traduccion: "the spider",
+                dicho: "Atarantamela a palos, no me la dejes llegar."
+            },
+            "34": {
+                nombre: "El soldado",
+                traduccion: "the soldier",
+                dicho: "Uno, dos, tres, el soldado pa'l cuartel."
+            },
+            "35": {
+                nombre: "La estrella",
+                traduccion: "the star",
+                dicho: "La estrella polar del norte."
+            },
+            "36": {
+                nombre: "El cazo",
+                traduccion: "the saucepan",
+                dicho: "El caso que te hago es poco."
+            },
+            "37": {
+                nombre: "El mundo",
+                traduccion: "the world",
+                dicho: "El mundo es una bola."
+            },
+            "38": {
+                nombre: "El Apache",
+                traduccion: "the Apache",
+                dicho: "Ay Chiuahua, cuanto Apache con calzon y con huarache."
+            },
+            "39": {
+                nombre: "El nopal",
+                traduccion: "the prickly pear cactus",
+                dicho: "Al nopal la van a ver solo cuando tiene tunas."
+            },
+            "40": {
+                nombre: "El alacrán",
+                traduccion: "the scorpion",
+                dicho: "El que con la cola pica le dan una paliza."
+            },
+            "41": {
+                nombre: "La rosa",
+                traduccion: "the rose",
+                dicho: "Rosam la mas mugrosa."
+            },
+            "42": {
+                nombre: "La calavera",
+                traduccion: "the skull",
+                dicho: "Al pasar por el panteon, me econtre un calaveron."
+            },
+            "43": {
+                nombre: "La campana",
+                traduccion: "the bell",
+                dicho: "La camapana de dolores"
+            },
+            "44": {
+                nombre: "El cantarito",
+                traduccion: "the little water pitcher",
+                dicho: "Tanto va el cantaro al agua hasta que se rompe."
+            },
+            "45": {
+                nombre: "El venado",
+                traduccion: "the deer",
+                dicho: "El que brinca por la pradera."
+            },
+            "46": {
+                nombre: "El Sol",
+                traduccion: "the sun",
+                dicho: "La cobija de los pobres."
+            },
+            "47": {
+                nombre: "La corona",
+                traduccion: "the crown",
+                dicho: "El sombrero de los Reyes."
+            },
+            "48": {
+                nombre: "La chalupa",
+                traduccion: "the canoe",
+                dicho: "Lupita sentada en su chalupita."
+            },
+            "49": {
+                nombre: "El pino",
+                traduccion: "the pine tree",
+                dicho: "Fresco y oloroso, todo el tiempo hermoso."
+            },
+            "50": {
+                nombre: "El pescado",
+                traduccion: "the fish",
+                dicho: "El que por la moca muere, aunque mudo fuere."
+            },
+            "51": {
+                nombre: "La palma",
+                traduccion: "the palm tree",
+                dicho: "La Palma borracha de sol"
+            },
+            "52": {
+                nombre: "La maceta",
+                traduccion: "the flowerpot",
+                dicho: "El que nace pa maceta del corredor no pasa"
+            },
+            "53": {
+                nombre: "El arpa",
+                traduccion: "the harp",
+                dicho: "El Arpa vieja de mi suegra."
+            },
+            "54": {
+                nombre: "La rana",
+                traduccion: "the frog",
+                dicho: "Al ver la verde rana, que brinco pego tu hermana."
+            }
+        };
+        var barajaInfo = {
+            "1": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "2": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "3": {
+                nombre: "Cinthia",
+                telefono: "",
+                pagado: false
+            },
+            "4": {
+                nombre: "Jesus Espino",
+                telefono: "",
+                pagado: false
+            },
+            "5": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "6": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "7": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "8": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "9": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "10": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "11": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "12": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "13": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "14": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "15": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "16": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "17": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "18": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "19": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "20": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "21": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "22": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "23": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "24": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "25": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "26": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "27": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "28": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "29": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "30": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "31": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "32": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "33": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "34": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "35": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "36": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "37": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "38": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "39": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "40": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "41": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "42": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "43": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "44": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "45": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "46": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "47": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "48": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "49": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "50": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "51": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "52": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "53": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            },
+            "54": {
+                nombre: "",
+                telefono: "",
+                pagado: false
+            }
+        };
+        function dibujar(a, b) {
+
+            $.each(a, function (i, item) {
+                var bb = barajaInfo[i];
+                var content = $('#content');
+                
+                var filtro = bb.nombre ? "filter: saturate(0.2)": "filter: saturate(1)";
+                var info = `
+                <div class="col">
+                <a href="#"">
+                  <img class="img-thumbnail mb-3" src="assets/cartas/b${i}.jpg" alt="Album screenshot" style="${filtro}" />
+                  <p style="font-size:12px" class="mb-1"> ${item.nombre} </p>
+                </a>
+                <p class="text-muted">  ${bb.nombre} <i> </i></p>`;
+              content.append(info);
+            })
+        }
+
+        $(document).ready(function () {
+            dibujar(baraja, barajaInfo);
+        });
+    </script>
+</body>
+
+</html>
