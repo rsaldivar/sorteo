@@ -16,7 +16,6 @@
             padding: 0px !Important;
         }
 
-        .col:hover img {}
 
         p.text-muted {
             position: absolute;
@@ -432,7 +431,7 @@
             20: {
                 nombre: "Brandon",
                 telefono: "",
-                pagado: false
+                pagado: true
             },
             21: {
                 nombre: "Lucy",
@@ -497,7 +496,7 @@
             33: {
                 nombre: "Brandon",
                 telefono: "",
-                pagado: false
+                pagado: true
             },
             34: {
                 nombre: "",
@@ -611,12 +610,13 @@
                 var bb = barajaInfo[i];
                 var content = $('#content');
 
+                var seleccionada =  bb.nombre  ? true : false;
                 var filtro = bb.nombre ? "filter: saturate(0)" : "filter: saturate(1)";
                 var info = `
-                <div class="col">
+                <div class="col seleccionada">
                 <a href="#"">
                   <img class="img-thumbnail mb-3" src="assets/cartas/b${i}.jpg" alt="Album screenshot" style="${filtro}" />
-                  <p style="font-size:12px" class="mb-1"> ${item.nombre} </p>
+                  <!--p style="font-size:12px" class="mb-1"> ${item.nombre} </p-->
                 </a>
                 <p class="text-muted">  ${bb.nombre} <i> </i></p>`;
                 content.append(info);
