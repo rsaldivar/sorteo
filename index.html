@@ -619,6 +619,7 @@
                 var seleccionada =  bb.nombre  ? true : false;
                 var filtro = bb.nombre ? "filter: saturate(0)" : "filter: saturate(1)";
                 var classpagado = bb.pagado? "pagado":"nopagado";
+                if(seleccionada == false) classpagado = "pagado";
                 var info = `
                 <div class="col seleccionada ${classpagado} ">
                 <a href="#"">
