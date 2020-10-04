@@ -16,7 +16,13 @@
             padding: 0px !Important;
         }
 
+        .pagado{
+            border: 3px solid green;
+        }
+        .nopagado{
+            border: 3px solid red;
 
+        }
         p.text-muted {
             position: absolute;
             text-orientation: upright;
@@ -359,9 +365,9 @@
                 pagado: true
             },
             6: {
-                nombre: "",
+                nombre: "Chuy",
                 telefono: "",
-                pagado: false
+                pagado: true
             },
             7: {
                 nombre: "Brenda",
@@ -613,7 +619,7 @@
                 var seleccionada =  bb.nombre  ? true : false;
                 var filtro = bb.nombre ? "filter: saturate(0)" : "filter: saturate(1)";
                 var info = `
-                <div class="col seleccionada">
+                <div class="col seleccionada ${item.pagado?"pagado":"nopagado"}">
                 <a href="#"">
                   <img class="img-thumbnail mb-3" src="assets/cartas/b${i}.jpg" alt="Album screenshot" style="${filtro}" />
                   <!--p style="font-size:12px" class="mb-1"> ${item.nombre} </p-->
