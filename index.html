@@ -600,9 +600,9 @@
                 pagado: true
             },
             53: {
-                nombre: "",
+                nombre: "Omar",
                 telefono: "",
-                pagado: false
+                pagado: true
             },
             54: {
                 nombre: "Orlando",
@@ -618,8 +618,9 @@
 
                 var seleccionada =  bb.nombre  ? true : false;
                 var filtro = bb.nombre ? "filter: saturate(0)" : "filter: saturate(1)";
+                var classpagado = item.pagado? "pagado":"nopagado";
                 var info = `
-                <div class="col seleccionada ${item.pagado?"pagado":"nopagado"}">
+                <div class="col seleccionada ${classpagado} ">
                 <a href="#"">
                   <img class="img-thumbnail mb-3" src="assets/cartas/b${i}.jpg" alt="Album screenshot" style="${filtro}" />
                   <!--p style="font-size:12px" class="mb-1"> ${item.nombre} </p-->
